@@ -3,20 +3,18 @@ import {Route,Switch,withRouter} from 'react-router-dom';
 import {connect,provider} from 'react-redux';
 import {ConnectedRouter} from 'react-router-redux';
 import axios from 'axios';
-import logo from '../logo.svg';
-import Header from '../Components/Header/Header'
-import '../App.css';
-import Footer from '../Components/Footer/Footer';
+import './Footer.css';
 
-class Main extends Component {
+class Footer extends Component {
   render() {
     return (
       <div>
-        <Header/>
-        <Footer/>
+        <footer className="App-footer">
+         looking for a Footer
+        </footer>
       </div>
     );
   }
 }
 
-export default Main;
+export default Footer;

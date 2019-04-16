@@ -4,19 +4,17 @@ import {connect,provider} from 'react-redux';
 import {ConnectedRouter} from 'react-router-redux';
 import axios from 'axios';
 import logo from '../logo.svg';
-import Header from '../Components/Header/Header'
 import '../App.css';
-import Footer from '../Components/Footer/Footer';
 
-class Main extends Component {
+class NoPage extends Component {
   render() {
     return (
       <div>
-        <Header/>
-        <Footer/>
+          Theres No Page in here CLick here to redirect
+          <a href="Localhost:3000"/>
       </div>
     );
   }
 }
 
-export default Main;
+export default NoPage;
