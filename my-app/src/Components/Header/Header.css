@@ -7,12 +7,40 @@ header.appHeader {
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: space-between;
-    background: #bb0707;
+    /* justify-content: space-between; */
+    background: #ffffff;
+}
+.search-field {
+    position: fixed;
+    right: 30px;
+    display: flex;
 }
 .homeIcon {
     display: flex !important;
     font-size: 46px !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+.search{
+    background: transparent;
+    height: 36px;
+    margin-top: 5px;
+    width:150px;
+    border-radius: 25px;
+    -webkit-transition: width .35s ease-in-out;  /* For Safari 3.1 to 6.0 */
+    transition: width .35s ease-in-out;
+    border: 1px solid black;
+}
+.search:focus{
+    width: 600px;
+    outline: none;
+    /* -webkit-transition: width 5s ease-in-out; /* For Safari 3.1 to 6.0 */
+    /* transition: width 5s ease-in-out; */
+}
+.searchIcon {
+    display: flex !important;
+    font-size: 36px !important;
+    margin-top: 5px;
     justify-content: flex-start !important;
     align-items: flex-start !important;
 }
